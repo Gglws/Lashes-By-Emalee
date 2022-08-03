@@ -40993,6 +40993,7 @@ $("#link4").on("click", function () {
   $("#newForm").hide();
   $("#newForm2").hide();
   $(".resultCard").hide();
+  $(".resultCard2").hide();
   $("#searchForm2").show();
 }); //lots of code just to automatically choose brand based on tweezers
 
@@ -41455,4 +41456,4 @@ $userForm2.submit(function (event) {
   }
 });
 },{"bootstrap":"xqrD","fs":"VUDL","http":"fwyw","path":"d0NU","tabulator-tables":"liHC"}]},{},["Focm"], null)
-//# sourceMappingURL=src.40efdf07.js.map
+//# sourceMappingURL=src.9d19433c.js.map
