@@ -41139,6 +41139,8 @@ var updateApp = function updateApp(row) {
   $("#searchForm2").hide();
   $("#newForm2").show();
   $(".resultCard2").hide();
+  $("#searchForm").hide();
+  $(".resultCard").hide();
   $("#formTitle2").text("Update Appointment Information");
   $('#chooseCustomer').empty();
   getReqId(row);
@@ -41380,6 +41382,7 @@ $searchForm2.submit(function (event) {
     tableCreation(data);
   }).fail(function () {
     alert("No appointment found.");
+    $('.resultCard2').hide();
   });
 }); //User form sends either post or patch req based on how the form was accessed
 
@@ -41452,4 +41455,4 @@ $userForm2.submit(function (event) {
   }
 });
 },{"bootstrap":"xqrD","fs":"VUDL","http":"fwyw","path":"d0NU","tabulator-tables":"liHC"}]},{},["Focm"], null)
-//# sourceMappingURL=src.78c3685c.js.map
+//# sourceMappingURL=src.40efdf07.js.map
