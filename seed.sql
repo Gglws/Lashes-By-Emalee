@@ -1,6 +1,0 @@
-INSERT INTO customers (first_name, last_name, phone_number, eye_shape, lash_type, tweezers, brand) VALUES ('gage', 'lewis', '090-1941-1249', 'almond', 'straight', 'curved isolation', 'mish esthetics');
-INSERT INTO customers (first_name, last_name, phone_number, eye_shape, lash_type, tweezers, brand) VALUES ('gage', 'lewis', '090-1941-1249', 'almond', 'straight', 'curved isolation', 'mish esthetics');
-INSERT INTO customers (first_name, last_name, phone_number, eye_shape, lash_type, tweezers, brand) VALUES ('gage', 'lewis', '090-1941-1249', 'almond', 'straight', 'curved isolation', 'mish esthetics');
-INSERT INTO customers (first_name, last_name, phone_number, eye_shape, lash_type, tweezers, brand) VALUES ('gage', 'lewis', '090-1941-1249', 'almond', 'straight', 'curved isolation', 'mish esthetics');
-INSERT INTO customers (first_name, last_name, phone_number, eye_shape, lash_type, tweezers, brand) VALUES ('gage', 'lewis', '090-1941-1249', 'almond', 'straight', 'curved isolation', 'mish esthetics');
-INSERT INTO customers (first_name, last_name, phone_number, eye_shape, lash_type, tweezers, brand) VALUES ('gage', 'lewis', '090-1941-1249', 'almond', 'straight', 'curved isolation', 'live bay lash');
