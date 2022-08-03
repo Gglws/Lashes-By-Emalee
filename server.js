@@ -6,7 +6,7 @@ dotenv.config();
 import pg from "pg";
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
 const pool = new pg.Pool({
   connectionString: process.env.DATABASE_URL,
@@ -101,7 +101,7 @@ app.post("/api/app", (req, res) => {
     });
 });
 
-
+//gets customer by name
 app.get("/api/lash/:name", (req, res) => {
   const nameId = req.params.name.toLowerCase();
   var sql = "SELECT * FROM customers WHERE first_name LIKE $1;";
@@ -140,6 +140,7 @@ app.get("/api/lash/:name", (req, res) => {
   }
 });
 
+//gets all customers
 app.get("/api/lash/", (req, res) => {
   var sql = `SELECT * FROM customers;`;
 
@@ -154,6 +155,8 @@ app.get("/api/lash/", (req, res) => {
   });
 });
 
+
+//get appointments by date
 app.get("/api/app/:date", async (req, res) => {
 
   const dateId = req.params.date;
@@ -213,6 +216,7 @@ app.get("/api/app/:date", async (req, res) => {
 
 });
 
+//gets all appointments
 app.get("/api/app/", (req, res) => {
 
   var sql = 'SELECT * FROM appointments INNER JOIN customers on appointments.customer_id = customers.customer_id;';
@@ -231,6 +235,8 @@ app.get("/api/app/", (req, res) => {
 
 });
 
+
+//gets appointment based on customer
 app.get("/api/sp/:id", (req, res) => {
 
   const customerId = req.params.id;
@@ -296,7 +302,7 @@ app.delete("/api/lash", (req, res, next) => {
   });
 });
 
-//Delete request for specific customer
+//Delete request for specific appointment
 app.delete("/api/app", (req, res, next) => {
   const appID = req.body;
 
@@ -360,6 +366,7 @@ app.patch("/api/lash/:id", (req, res, next) => {
     });
 });
 
+//update request for appointment
 app.patch("/api/app/:id", (req, res, next) => {
   const appId = Number(req.params.id);
   
